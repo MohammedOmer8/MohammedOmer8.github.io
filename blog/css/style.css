@@ -1,0 +1,87 @@
+My Drive
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+grid-container {
+        display: grid;
+        grid-template-rows: auto;
+        grid-auto-rows: minmax(150px, auto);
+        grid-template-areas: "header header"
+}
+@font-face {
+        font-family: Ultra;
+        src: url('../fonts/serif/ultra-regular.ttf');
+        font-size: normal;
+        font-weight: normal;
+}
+.grid-item heading {
+        grid-area: header;
+}
+.heading h1 {
+        font-family: sans-serif;
+        font-size: 50px;
+        font-weight: bold;
+        -ms-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+}
+.highlight {
+        background-color: rgb(97, 14, 14);
+        padding: 0.375rem;
+        font-family: Ultra, serif;
+        font-size: 50px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        text-shadow: 1px 1px 1px black;
+        border-bottom-right-radius: 8px;
+        border-top-left-radius: 8px;
+        ox-shadow: 2px 2px 2px black;
+        color: rgb(243, 234, 234);
+}
+
+
